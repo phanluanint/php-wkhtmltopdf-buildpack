@@ -7,8 +7,8 @@ BUILD_DIR=$1
 CACHE_DIR=$2
 ENV_DIR=$3
 
-BIN_PATH="$BUILD_DIR/vendor/bin"
-LIB_PATH="$BUILD_DIR/vendor/libs"
+BIN_PATH="$BUILD_DIR/.heroku/php/bin"
+LIB_PATH="$BUILD_DIR/.heroku/php/lib"
 TMP_PATH="$BUILD_DIR/tmp"
 mkdir -p $CACHE_DIR $BIN_PATH $LIB_PATH $TMP_PATH
 
