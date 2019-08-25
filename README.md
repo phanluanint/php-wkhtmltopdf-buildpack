@@ -3,7 +3,7 @@
 This is a [Heroku buildpack][0] for bundling a compatible [wkhtmltopdf][1]
 binary with environment stack. 
 
-**It only work with `heroku/php` buildpack** and working on `heroku-16` and `heroku-18` stack.
+**It only work with `heroku/php` buildpack**. Tested on `heroku-16` and `heroku-18` stack.
 
 ## Versions
 
