@@ -1,7 +1,9 @@
-# wkhtmltopdf Buildpack
+# PHP wkhtmltopdf Buildpack
 
 This is a [Heroku buildpack][0] for bundling a compatible [wkhtmltopdf][1]
-binary with your environment.
+binary with environment stack. 
+
+**It only work with `heroku/php` buildpack** and working on `heroku-16` and `heroku-18` stack.
 
 ## Versions
 
@@ -15,7 +17,7 @@ and `wkhtmltoimage` binaries, and the corresponding library `libwkhtmltox`,
 into the dynos:
 
 ```bash
-$ heroku buildpacks:add https://github.com/dscout/wkhtmltopdf-buildpack.git
+$ heroku buildpacks:add https://github.com/phanluanint/wkhtmltopdf-buildpack.git
 ```
 
 If you want to use a `wkhtmltopdf` version other than 0.12.3, set
@@ -38,7 +40,7 @@ $ heroku repo:purge_cache -a appname
 ## Troubleshooting
 
 If you run into issues when trying to deploy with this buildpack, make sure your
-app is running on `cedar-14` or `heroku-16`. You can check this with:
+app is running on `cedar-14`, `heroku-16` and `heroku-18`. You can check this with:
 
 ```bash
 $ heroku stack
