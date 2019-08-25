@@ -40,7 +40,7 @@ $ heroku repo:purge_cache -a appname
 ## Troubleshooting
 
 If you run into issues when trying to deploy with this buildpack, make sure your
-app is running on `cedar-14`, `heroku-16` and `heroku-18`. You can check this with:
+app is running on `heroku-16` or `heroku-18`. You can check this with:
 
 ```bash
 $ heroku stack
